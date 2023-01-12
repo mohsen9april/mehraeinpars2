@@ -1,0 +1,13 @@
+.chart_container {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #132737;
+  text-align: center;
+  margin-top: 2em;
+  border-radius: 20px;
+}
+
+.h2_Reports {
+  color: #fff;
+  font-size: 1rem;
+}

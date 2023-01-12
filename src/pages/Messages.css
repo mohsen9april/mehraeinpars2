@@ -1,0 +1,19 @@
+.title_Reports {
+  /* background-color: aqua; */
+  justify-content: center;
+  display: flex;
+  width: 90%;
+  gap: 5rem;
+  padding: 5rem;
+  margin: auto;
+}
+
+.one {
+  /* background-color: rgb(47, 215, 80); */
+  width: 100%;
+}
+
+.two {
+  width: 100%;
+  /* background-color: violet; */
+}

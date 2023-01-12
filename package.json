@@ -17,6 +17,7 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "react-vertical-timeline-component": "^3.6.0",
+    "recharts": "^2.3.2",
     "vazirmatn": "^33.0.3",
     "web-vitals": "^2.1.4"
   },
