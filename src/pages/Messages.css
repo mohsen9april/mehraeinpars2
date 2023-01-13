@@ -1,10 +1,10 @@
 .title_Reports {
-  background-color: aqua;
-  justify-content: center;
+  /* background-color: aqua; */
   display: flex;
-  width: 95%;
-  gap: 5rem;
-  padding: 1rem 3rem;
+  justify-content: center;
+  width: 90%;
+  gap: 1rem;
+  padding: 1rem 2rem;
   margin: auto;
 }
 

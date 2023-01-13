@@ -61,7 +61,7 @@ const LineM = () => {
             data={data}
             margin={{
               top: 25,
-              right: 5,
+              right: 8,
               left: 5,
               bottom: 5,
             }}
