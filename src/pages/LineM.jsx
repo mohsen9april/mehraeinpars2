@@ -12,83 +12,55 @@ import {
 
 const data = [
   {
-    name: "۱",
-    Iphone: 62185,
+    name: "فروردین",
+    Iphone: 1629000,
   },
   {
-    name: "۲",
-    Iphone: 57325,
+    name: "اردیبهشت",
+    Iphone: 1712000,
   },
   {
-    name: "۳",
-    Iphone: 54362,
+    name: "خرداد",
+    Iphone: 1736000,
   },
   {
-    name: "۴",
-    Iphone: 64120,
+    name: "تیر",
+    Iphone: 1623000,
   },
   {
-    name: "۵",
-    Iphone: 56854,
+    name: "مرداد",
+    Iphone: 1798000,
   },
   {
-    name: "۶",
-    Iphone: 42365,
+    name: "شهریور",
+    Iphone: 1564000,
   },
   {
-    name: "۷",
-    Iphone: 59685,
+    name: "مهر",
+    Iphone: 1768000,
   },
   {
-    name: "۸",
-    Iphone: 44698,
+    name: "آبان",
+    Iphone: 1643000,
   },
   {
-    name: "۹",
-    Iphone: 65320,
-  },
-  {
-    name: "۱۰",
-    Iphone: 64125,
-  },
-  {
-    name: "۱۱",
-    Iphone: 56854,
-  },
-  {
-    name: "۱۲",
-    Iphone: 58763,
-  },
-  {
-    name: "۱۳",
-    Iphone: 59685,
-  },
-  {
-    name: "۱۴",
-    Iphone: 63274,
-  },
-  {
-    name: "۱۵",
-    Iphone: 65320,
-  },
-  {
-    name: "۱۶",
-    Iphone: 54960,
+    name: "آذر",
+    Iphone: 1785000,
   },
 ];
 
-const LineD = () => {
+const LineM = () => {
   return (
     <div>
       <div className="chart_container">
-        <h2 className="h2_Reports">گزارش روزانه</h2>
+        <h2 className="h2_Reports">گزارش ماهیانه</h2>
         <ResponsiveContainer width="90%" aspect={2}>
           <LineChart
             width={500}
             height={300}
             data={data}
             margin={{
-              top: 15,
+              top: 25,
               right: 5,
               left: 5,
               bottom: 5,
@@ -106,8 +78,8 @@ const LineD = () => {
               type="monotone"
               dataKey="Iphone"
               stroke="#8884d8"
-              strokeWidth="3"
-              dot={{ fill: "#2e4355", stroke: "#8884d8", strokeWidth: 2, r: 4 }}
+              strokeWidth="2"
+              dot={{ fill: "#2e4355", stroke: "#8884d8", strokeWidth: 2, r: 5 }}
               activeDot={{ fill: "#2e4355", stroke: "#8884d8", strokeWidth: 5, r: 10 }}
             />
           </LineChart>
@@ -117,4 +89,4 @@ const LineD = () => {
   );
 };
 
-export default LineD;
+export default LineM;

@@ -1,4 +1,5 @@
 import LineD from "./LineD";
+import LineM from "./LineM";
 import "./Messages.css";
 
 const Messages = () => {
@@ -10,7 +11,7 @@ const Messages = () => {
           <LineD />
         </div>
         <div className="two">
-          <LineD />
+          <LineM />
         </div>
       </div>
     </>
