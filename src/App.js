@@ -11,10 +11,11 @@ import Order from "./pages/Order";
 import Saved from "./pages/Saved";
 import Setting from "./pages/Setting";
 import Footer from "./components/Sidebar/Footer/Footer";
+import Head from "./components/Head/Head";
 function App() {
   return (
     <Router>
-      <h2>Navbar</h2>
+      <Head />
       <SideBar>
         <Routes>
           <Route path="/" element={<Dashboard />} />

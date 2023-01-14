@@ -1,12 +1,12 @@
 import { NavLink } from "react-router-dom";
-import { FaBars, FaHome, FaLock, FaMoneyBill, FaUser } from "react-icons/fa";
+import { FaHome, FaLock, FaMoneyBill, FaUser } from "react-icons/fa";
 import TocRoundedIcon from "@mui/icons-material/TocRounded";
-import DashboardRoundedIcon from "@mui/icons-material/DashboardRounded";
+// import DashboardRoundedIcon from "@mui/icons-material/DashboardRounded";
 import { MdMessage } from "react-icons/md";
 import { BiAnalyse } from "react-icons/bi";
-import { BiCog } from "react-icons/bi";
+// import { BiCog } from "react-icons/bi";
 import { AiFillHeart, AiTwotoneFileExclamation } from "react-icons/ai";
-import { BsCartCheck } from "react-icons/bs";
+// import { BsCartCheck } from "react-icons/bs";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import SidebarMenu from "./SidebarMenu";
