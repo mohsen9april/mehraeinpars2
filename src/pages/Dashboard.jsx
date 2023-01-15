@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Dashboard.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const homeAbout = [
   {
@@ -109,6 +111,13 @@ const Heading = ({ subtitle, title }) => {
 };
 
 const Dashboard = () => {
+  useEffect(() => {
+    AOS.init({
+      delay: 200,
+      throttleDelay: 99,
+    });
+  }, []);
+
   return (
     <div>
       <div className="header_Dashboard">
@@ -125,7 +134,17 @@ const Dashboard = () => {
 
       <section className="aboutHome">
         <div className="container flexSB">
-          <div className="left row">
+          <div
+            className="left row"
+            data-aos="fade-up-right"
+            data-aos-offset="200"
+            data-aos-delay="30"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+          >
             <img src="./images/about.webp" alt="" />
           </div>
           <div className="right row">
@@ -148,24 +167,34 @@ const Dashboard = () => {
           </div>
         </div>
       </section>
-
-      <section className="online">
-        <div className="container">
-          <Heading subtitle="COURSES" title="Browse Our Online Courses" />
-          <div className="content grid3">
-            {online.map((val) => (
-              <div className="box">
-                <div className="img">
-                  <img src={val.cover} alt="/" />
-                  <img src={val.hoverCover} alt="/" className="show" />
+      <div
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="30"
+        data-aos-duration="500"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
+        <section className="online">
+          <div className="container">
+            <Heading subtitle="COURSES" title="Browse Our Online Courses" />
+            <div className="content grid3">
+              {online.map((val) => (
+                <div className="box">
+                  <div className="img">
+                    <img src={val.cover} alt="/" />
+                    <img src={val.hoverCover} alt="/" className="show" />
+                  </div>
+                  <h1>{val.courseName}</h1>
+                  <span>{val.course}</span>
                 </div>
-                <h1>{val.courseName}</h1>
-                <span>{val.course}</span>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 };
