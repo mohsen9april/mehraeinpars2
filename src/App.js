@@ -1,7 +1,7 @@
 import "./App.css";
 import SideBar from "./components/Sidebar/SideBar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
+import Footer from "./components/Footer/Footer";
 import Dashboard from "./pages/Dashboard";
 import Users from "./pages/Users";
 import Messages from "./pages/Messages";
@@ -10,7 +10,6 @@ import Analytics from "./pages/Analytics";
 import Order from "./pages/Order";
 import Saved from "./pages/Saved";
 import Setting from "./pages/Setting";
-import Footer from "./components/Sidebar/Footer/Footer";
 import Head from "./components/Head/Head";
 function App() {
   return (
