@@ -4,6 +4,7 @@ import { ReactComponent as SchoolIcon } from "../school.svg";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import timelineElements from "./timelineElements";
+import "./Analytics.css";
 
 const Analytics = () => {
   let workIconStyles = { background: "#06D6A0" };
@@ -11,7 +12,15 @@ const Analytics = () => {
 
   return (
     <div>
-      <h1 className="title">Timeline</h1>
+      <div className="timeline_header">
+        <h1>پروژه خط جدید</h1>
+      </div>
+      <div className="timeline_top">
+        {/* <img src="./images/timeline1.png" alt="/" /> */}
+        <video loop autoPlay>
+          <source src="./images/video1.mp4" type="video/mp4" />
+        </video>
+      </div>
       <VerticalTimeline lineColor="#000000">
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";

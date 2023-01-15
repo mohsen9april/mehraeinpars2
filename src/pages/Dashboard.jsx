@@ -128,22 +128,24 @@ const Dashboard = () => {
           <span></span>
         </div>
       </div>
-      <div className="home_top">
-        <h2> Home Top </h2>
+      <div className="video_top">
+        <video loop autoPlay>
+          <source src="./images/video.mp4" type="video/mp4" />
+        </video>
       </div>
 
       <section className="aboutHome">
         <div className="container flexSB">
           <div
             className="left row"
-            data-aos="fade-up-right"
-            data-aos-offset="200"
-            data-aos-delay="30"
-            data-aos-duration="500"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            data-aos-anchor-placement="top-center"
+            // data-aos="fade-up-right"
+            // data-aos-offset="200"
+            // data-aos-delay="30"
+            // data-aos-duration="500"
+            // data-aos-easing="ease-in-out"
+            // data-aos-mirror="true"
+            // data-aos-once="false"
+            // data-aos-anchor-placement="top-center"
           >
             <img src="./images/about.webp" alt="" />
           </div>
@@ -167,6 +169,11 @@ const Dashboard = () => {
           </div>
         </div>
       </section>
+
+      <div>
+        <img src="./images/image1.png" alt="/" />
+      </div>
+
       <div
         data-aos="fade-up"
         data-aos-offset="200"
@@ -195,6 +202,12 @@ const Dashboard = () => {
           </div>
         </section>
       </div>
+
+      <img src="./images/aboutus1.png" alt="/" />
+
+      <h1> Who We Are </h1>
+
+      <img src="./images/image2.png" alt="/" />
     </div>
   );
 };

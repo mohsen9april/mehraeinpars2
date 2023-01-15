@@ -31,13 +31,20 @@
   clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
 }
 
-.home_top {
-  background-color: #82c6c0;
-  margin: 2rem;
-  width: 95%;
-  height: 20rem;
+.video_top {
+  /* background-color: #82c6c0; */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  height: auto;
   align-items: center;
   text-align: center;
+}
+
+.video_top video {
+  width: 98%;
+  height: auto;
+  border-radius: 2rem;
 }
 
 /* ----- About --------- */

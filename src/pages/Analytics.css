@@ -1,0 +1,19 @@
+.timeline_top {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.timeline_top video {
+  width: 98%;
+  max-height: auto;
+  border-radius: 3rem;
+}
+
+.timeline_header {
+  font-size: 2rem;
+  text-align: center;
+}

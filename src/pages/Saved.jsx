@@ -8,6 +8,7 @@ const Saved = () => {
   return (
     <div>
       <>
+        <img src="./images/aboutus2.png" alt="/" />
         <div className="contacts_container">
           <div className="one">
             <div>
@@ -58,6 +59,7 @@ const Saved = () => {
             </div>
           </div>
         </div>
+        <img src="./images/contactfrom1.png" alt="/" />
       </>
     </div>
   );
