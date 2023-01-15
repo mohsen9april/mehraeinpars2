@@ -13,39 +13,39 @@ import {
 const data = [
   {
     name: "فروردین",
-    Iphone: 1629000,
+    تولید: 1629000,
   },
   {
     name: "اردیبهشت",
-    Iphone: 1712000,
+    تولید: 1712000,
   },
   {
     name: "خرداد",
-    Iphone: 1736000,
+    تولید: 1736000,
   },
   {
     name: "تیر",
-    Iphone: 1623000,
+    تولید: 1623000,
   },
   {
     name: "مرداد",
-    Iphone: 1798000,
+    تولید: 1798000,
   },
   {
     name: "شهریور",
-    Iphone: 1564000,
+    تولید: 1564000,
   },
   {
     name: "مهر",
-    Iphone: 1768000,
+    تولید: 1768000,
   },
   {
     name: "آبان",
-    Iphone: 1643000,
+    تولید: 1643000,
   },
   {
     name: "آذر",
-    Iphone: 1785000,
+    تولید: 1785000,
   },
 ];
 
@@ -54,14 +54,14 @@ const LineM = () => {
     <div>
       <div className="chart_container">
         <h2 className="h2_Reports">گزارش ماهیانه</h2>
-        <ResponsiveContainer width="90%" aspect={2}>
+        <ResponsiveContainer width="95%" aspect={2}>
           <LineChart
             width={500}
             height={300}
             data={data}
             margin={{
               top: 25,
-              right: 8,
+              right: 5,
               left: 5,
               bottom: 5,
             }}
@@ -76,7 +76,7 @@ const LineM = () => {
             />
             <Line
               type="monotone"
-              dataKey="Iphone"
+              dataKey="تولید"
               stroke="#8884d8"
               strokeWidth="2"
               dot={{ fill: "#2e4355", stroke: "#8884d8", strokeWidth: 2, r: 5 }}

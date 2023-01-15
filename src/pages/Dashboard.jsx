@@ -135,7 +135,7 @@ const Dashboard = () => {
       </div>
 
       <section className="aboutHome">
-        <div className="container flexSB">
+        <div className="about_container">
           <div
             className="left row"
             // data-aos="fade-up-right"
@@ -147,7 +147,7 @@ const Dashboard = () => {
             // data-aos-once="false"
             // data-aos-anchor-placement="top-center"
           >
-            <img src="./images/about.webp" alt="" />
+            <img src="./images/about.webp" alt="/" />
           </div>
           <div className="right row">
             <Heading subtitle="LEARN ANYTHING" title="Benefits About Online Learning Expertise" />

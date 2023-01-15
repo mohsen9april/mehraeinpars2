@@ -51,6 +51,10 @@
 .aboutHome {
   height: auto;
 }
+
+.about_container {
+  display: flex;
+}
 .aboutHome #heading {
   text-align: left;
   padding: 0;

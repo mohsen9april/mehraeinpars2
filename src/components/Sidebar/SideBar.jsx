@@ -76,10 +76,10 @@ const SideBar = ({ children }) => {
 
   const showAnimation = {
     hidden: {
-      width: 0,
+      width: "auto",
       opacity: 0,
       transition: {
-        duration: 0.5,
+        duration: 0.2,
       },
     },
     show: {
@@ -96,7 +96,7 @@ const SideBar = ({ children }) => {
       <div className="main-container">
         <motion.div
           animate={{
-            width: isOpen ? "200px" : "45px",
+            width: isOpen ? "180px" : "45px",
 
             transition: {
               duration: 0.5,
