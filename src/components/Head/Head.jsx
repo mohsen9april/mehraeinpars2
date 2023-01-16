@@ -12,24 +12,19 @@ const Head = () => {
             <img src="./images/logo.png" alt="/" />
           </a>
         </div>
-        {/* <div className="twoo">
-          <button> Dark Mode </button>
-        </div> */}
         <div className="header_account">
-          <Button
+          {/* <Button
             variant="outlined"
             color="inherit"
             size="large"
             startIcon={<AccountCircleRoundedIcon />}
           >
             حساب کاربری
-          </Button>
-          {/* <div>
-            <i className="fab fa-facebook-f icon"></i>
-            <i className="fab fa-instagram icon"></i>
-            <i className="fab fa-twitter icon"></i>
-            <i className="fab fa-youtube icon"></i>
-          </div> */}
+          </Button> */}
+          <i className="fab fa-facebook-f icon"></i>
+          <i className="fab fa-instagram icon"></i>
+          <i className="fab fa-twitter icon"></i>
+          <i className="fab fa-youtube icon"></i>
         </div>
       </div>
     </>

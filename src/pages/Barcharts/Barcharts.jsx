@@ -67,8 +67,6 @@ const Barcharts = () => {
           <Bar dataKey="fees" fill="#82ca9d" />
         </BarChart>
       </ResponsiveContainer>
-
-      <h2>next</h2>
     </div>
   );
 };

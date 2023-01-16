@@ -16,14 +16,14 @@ const routes = [
     name: "صفحه اصلی",
     icon: <FaHome />,
   },
-  {
-    path: "/users",
-    name: "چارت سازمانی",
-    icon: <FaUser />,
-  },
+  // {
+  //   path: "/users",
+  //   name: "چارت سازمانی",
+  //   icon: <FaUser />,
+  // },
   {
     path: "/messages",
-    name: "محصولات",
+    name: "گزارش",
     icon: <MdMessage />,
   },
   {
@@ -33,7 +33,7 @@ const routes = [
   },
   {
     path: "/file-manager",
-    name: "گزارشات",
+    name: "دپارتمان",
     icon: <AiTwotoneFileExclamation />,
     subRoutes: [
       {

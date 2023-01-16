@@ -1,4 +1,5 @@
 import React from "react";
+import "./Piecharts.css";
 import { PieChart, Pie, Legend, Cell, ResponsiveContainer, Tooltip } from "recharts";
 
 const data01 = [
@@ -21,10 +22,9 @@ const data02 = [
 
 const Piecharts = () => {
   const data = [
-    { name: "Tea", value: 400 },
-    { name: "Coffee", value: 300 },
-    { name: "Cola", value: 300 },
-    { name: "Water", value: 200 },
+    { name: "شیفت صبح", value: 400 },
+    { name: "شیفت عصر", value: 300 },
+    { name: "شیفت شب", value: 300 },
   ];
 
   const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
@@ -57,57 +57,70 @@ const Piecharts = () => {
   };
 
   return (
-    <>
-      <div>
-        <div class="row d-flex justify-content-center text-center">
-          <div className="col-md-8">
-            <ResponsiveContainer width={400} height={400} className="text-center">
-              <PieChart width={400} height={400}>
-                <Legend layout="vertical" verticalAlign="top" align="top" />
-                <Pie
-                  data={data}
-                  cx="50%"
-                  cy="50%"
-                  labelLine={false}
-                  label={renderCustomizedLabel}
-                  outerRadius={80}
-                  fill="#8884d8"
-                  dataKey="value"
-                >
-                  {data.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                  ))}
-                </Pie>
-              </PieChart>
-            </ResponsiveContainer>
-          </div>
+    <div className="piecharts_container">
+      <div class="left_piecharts">
+        <h3>گزارش توقفات</h3>
+        <br />
+        <div>
+          <ResponsiveContainer width={400} height={450} className="text-center">
+            <PieChart width={400} height={400}>
+              <Legend layout="vertical" verticalAlign="top" align="top" />
+              <Pie
+                data={data}
+                cx="50%"
+                cy="50%"
+                labelLine={false}
+                label={renderCustomizedLabel}
+                outerRadius={150}
+                fill="#8884d8"
+                dataKey="value"
+              >
+                {data.map((entry, index) => (
+                  <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                ))}
+              </Pie>
+            </PieChart>
+          </ResponsiveContainer>
         </div>
       </div>
-      <div>
+      <div className="right_piecharts">
+        <h3>مصرف مواد شیمیایی </h3>
+        <br />
+        <br />
+        <br />
         <PieChart width={1000} height={400}>
           <Pie
             dataKey="value"
-            isAnimationActive={false}
+            isAnimationActive={true}
             data={data01}
             cx={200}
             cy={200}
-            outerRadius={80}
-            fill="#8884d8"
+            outerRadius={150}
+            // fill="#8884d8"
             label
-          />
+          >
+            {data01.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+            ))}
+          </Pie>
           <Pie
             dataKey="value"
+            isAnimationActive={true}
             data={data02}
             cx={500}
             cy={200}
             innerRadius={40}
-            outerRadius={80}
+            outerRadius={100}
             fill="#82ca9d"
-          />
+          >
+            {data01.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+            ))}
+          </Pie>
           <Tooltip />
         </PieChart>
       </div>
-    </>
+    </div>
   );
 };
 

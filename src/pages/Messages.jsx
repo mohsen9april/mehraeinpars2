@@ -8,7 +8,7 @@ import ProductsCountUp from "./ProductsCountUp";
 const Messages = () => {
   return (
     <>
-      <h2>گزارش تولید</h2>
+      <h2 className="h2_reports">گزارش تولید</h2>
       <div className="title_Reports">
         <div className="one">
           <LineD />

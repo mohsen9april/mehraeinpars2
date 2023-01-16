@@ -1,19 +1,20 @@
 /*--------head------------*/
 .header {
   display: flex;
-  height: 5rem;
+  height: 4rem;
   align-items: center;
   justify-content: space-between;
 }
 
 .header_logo img {
-  background-color: yellow;
   padding-top: 2rem;
   padding-left: 2rem;
-  width: 7.5rem;
+  width: 7rem;
   height: auto;
 }
 
 .header_account {
+  display: flex;
   padding-right: 2rem;
+  gap: 1rem;
 }

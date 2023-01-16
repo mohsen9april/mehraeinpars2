@@ -1,3 +1,7 @@
+.h2_reports {
+  direction: rtl;
+}
+
 .title_Reports {
   /* background-color: aqua; */
   display: flex;
