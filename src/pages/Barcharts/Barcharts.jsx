@@ -11,34 +11,46 @@ import {
 } from "recharts";
 const pdata = [
   {
-    name: "Python",
-    student: 13,
-    fees: 10,
+    name: "برق و ابزار دقیق",
+    کل: 25,
+    صیح: 15,
+    عصر: 8,
+    شب: 8,
   },
   {
-    name: "Javascript",
-    student: 15,
-    fees: 12,
+    name: "مکانیک",
+    کل: 13,
+    صیح: 15,
+    عصر: 8,
+    شب: 8,
   },
   {
-    name: "PHP",
-    student: 5,
-    fees: 10,
+    name: "فرایند تولید",
+    کل: 13,
+    صیح: 15,
+    عصر: 8,
+    شب: 8,
   },
   {
-    name: "Java",
-    student: 10,
-    fees: 5,
+    name: "کنترل کیفیت",
+    کل: 13,
+    صیح: 15,
+    عصر: 8,
+    شب: 8,
   },
   {
-    name: "C#",
-    student: 9,
-    fees: 4,
+    name: "شبکه و قطع برق",
+    کل: 13,
+    صیح: 15,
+    عصر: 8,
+    شب: 8,
   },
   {
-    name: "C++",
-    student: 10,
-    fees: 8,
+    name: "سایر",
+    کل: 13,
+    صیح: 15,
+    عصر: 8,
+    شب: 8,
   },
 ];
 
@@ -63,8 +75,10 @@ const Barcharts = () => {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="student" fill="#8884d8" />
-          <Bar dataKey="fees" fill="#82ca9d" />
+          <Bar dataKey="کل" fill="#8884d8" />
+          <Bar dataKey="صیح" fill="#82ca9d" />
+          <Bar dataKey="عصر" fill="#8884d8" />
+          <Bar dataKey="شب" fill="#82ca9d" />
         </BarChart>
       </ResponsiveContainer>
     </div>

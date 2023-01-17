@@ -121,10 +121,10 @@ const Dashboard = () => {
   return (
     <div>
       <div className="header_Dashboard">
-        <div className="hi">
+        <div className="left_header_dashboard">
           <h1>کاغذ سازی مهر آیین پارس</h1>
         </div>
-        <div className="bye">
+        <div className="right_header_dashboard">
           <span></span>
         </div>
       </div>
@@ -133,6 +133,9 @@ const Dashboard = () => {
           <source src="./images/video.mp4" type="video/mp4" />
         </video>
       </div>
+
+      <br />
+      <br />
 
       <section className="aboutHome">
         <div className="about_container">
@@ -147,7 +150,9 @@ const Dashboard = () => {
             // data-aos-once="false"
             // data-aos-anchor-placement="top-center"
           >
-            <img src="./images/about.webp" alt="/" />
+            <div>
+              <img src="./images/about.webp" alt="/" />
+            </div>
           </div>
           <div className="right row">
             <Heading subtitle="LEARN ANYTHING" title="Benefits About Online Learning Expertise" />
@@ -169,18 +174,29 @@ const Dashboard = () => {
           </div>
         </div>
       </section>
-
-      <div>
-        <img src="./images/image1.png" alt="/" />
-      </div>
-
+      <br />
       <div
-        data-aos="fade-up"
-        data-aos-offset="200"
+        data-aos="fade-right"
+        data-aos-offset="100"
         data-aos-delay="30"
         data-aos-duration="500"
         data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
+        // data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
+        <img style={{ display: "flex", margin: "auto" }} src="./images/image1.png" alt="/" />
+      </div>
+      <br></br>
+      <br></br>
+
+      <div
+        data-aos="fade-up"
+        data-aos-offset="100"
+        data-aos-delay="30"
+        data-aos-duration="500"
+        data-aos-easing="ease-in-out"
+        // data-aos-mirror="true"
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
       >
@@ -202,12 +218,12 @@ const Dashboard = () => {
           </div>
         </section>
       </div>
-
-      <img src="./images/aboutus1.png" alt="/" />
-
+      <br />
+      <img style={{ display: "flex", margin: "auto" }} src="./images/aboutus1.png" alt="/" />
+      <br />
+      <br />
       <h1> Who We Are </h1>
-
-      <img src="./images/image2.png" alt="/" />
+      <img style={{ display: "flex", margin: "auto" }} src="./images/image2.png" alt="/" />
     </div>
   );
 };

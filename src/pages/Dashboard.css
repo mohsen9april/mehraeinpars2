@@ -10,12 +10,12 @@
   /* margin: 0 30px; */
 }
 
-.hi {
+.left_header_dashboard {
   text-align: center;
   width: 100%;
 }
 
-.bye {
+.right_header_dashboard {
   background-color: #1eb2a6;
   right: 0;
   padding: 40px 70px;
@@ -47,25 +47,34 @@
 }
 
 /* ----- About --------- */
-
 .aboutHome {
   height: auto;
 }
-
 .about_container {
+  /* background-color: #1eb2a6; */
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 .aboutHome #heading {
   text-align: left;
   padding: 0;
 }
+.aboutHome .left {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
 .aboutHome .left img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 40rem;
+  height: 53rem;
 }
 .aboutHome .right {
-  padding: 80px 50px;
+  flex: 1;
+  /* padding: 80px 50px; */
 }
 .aboutHome .items {
   margin-top: 50px;
@@ -76,13 +85,7 @@
   padding: 20px;
   transition: 0.5s;
 }
-.aboutHome .img {
-  width: 200px;
-}
-.aboutHome img {
-  width: 70px;
-  height: 70px;
-}
+
 .aboutHome .item h2 {
   font-size: 20px;
   margin-bottom: 15px;

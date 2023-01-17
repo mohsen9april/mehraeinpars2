@@ -23,7 +23,8 @@ const Messages = () => {
       <div>
         <Piecharts />
       </div>
-      <div style={{ width: "50rem" }}>
+      <br />
+      <div className="barchart_reports">
         <Barcharts />
       </div>
     </>
